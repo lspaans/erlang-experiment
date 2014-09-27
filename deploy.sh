@@ -43,10 +43,10 @@ install_script redeploy <<'EOF'
 sudo sh /vagrant/deploy.sh
 EOF
 
-install_script erlang-experiment <<'EOF'
+install_script erlang_experiment <<'EOF'
 #!/bin/sh
 cd /vagrant
-erl erlang-experiment.erl "$@"
+erl erlang_experiment.erl "$@"
 EOF
 
 install_packages \
